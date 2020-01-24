@@ -3,7 +3,7 @@ RUN apt-get update
 RUN apt-get install chromium xvfb --yes
 
 # See https://crbug.com/795759
-RUN apt-get install -yq libgconf-2-4
+RUN apt-get install -yq libgconf-2-4 git
 
 # Install latest chrome dev package and fonts to support major charsets (Chinese, Japanese, Arabic, Hebrew, Thai and a few others)
 # Note: this installs the necessary libs to make the bundled version of Chromium that Puppeteer
